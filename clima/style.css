@@ -26,11 +26,12 @@ body {
     flex: 1;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(240, 240, 240, 0.8);
-    /* Fondo con opacidad */
+    /* background-color: rgba(240, 240, 240, 0.8);
+    /* Fondo con opacidad 
     /* display: flex;
     flex-direction: column;
-    justify-content: space-between; */
+    justify-content: space-between; 
+    */
 }
 
 .right-section {

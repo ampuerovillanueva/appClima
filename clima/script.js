@@ -10,7 +10,7 @@ const departmentSelect = document.getElementById('department-select');
 const days = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
 const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
 
-const API_KEY = '49cc8c821cd2aff9af04c9f98c36eb74';
+const API_KEY = '9de243494c0b295cca9337e1e96b00e2';
 
 // Coordenadas de los departamentos del Perú
 const departments = {
