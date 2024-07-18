@@ -38,7 +38,7 @@ body {
     flex: 3;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(208, 208, 208, 0.8);
+    /* background-color: rgba(208, 208, 208, 0.8);
     /* Fondo con opacidad */
     overflow-x: hidden;
 }
@@ -194,10 +194,10 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgba(0, 123, 255, 0.8);
+    /* background-color: rgba(0, 123, 255, 0.8);
     /* Azul atractivo con opacidad */
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white; 
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
     /* Sombra para dar profundidad */
 }
 
@@ -251,7 +251,7 @@ body {
 }
 
 .future-forecast {
-    background-color: rgba(0, 123, 255, 0.8);
+    /* background-color: rgba(0, 123, 255, 0.8); */
     /* Azul atractivo con opacidad */
     padding: 20px;
     border-radius: 10px;
