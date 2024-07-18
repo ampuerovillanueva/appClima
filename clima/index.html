@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <!-- Sección izquierda -->
+    <div class="container">
+        <div class="left-section">
+            
+            <div class="current-info">
+                <div class="date-container">
+                    <div>
+                        <div class="time" id="time">12:30 <span id="am-pm">PM</span></div>
+                        <div class="date" id="date">Monday, 25 May</div>
+                    </div>
+                    <div class="time-zone-container">
+                        <div class="time-zone" id="time-zone">America/Lima</div>
+                        <div id="country" class="country">PE</div>
+                    </div>
+                </div>
+                <div class="department-select-container">
+                    <label for="department-select">Seleccione un departamento:</label>
+                    <select id="department-select"></select>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <img src="clima.jpg" alt="Clima">
+            </div>
+            
+        </div>
+        <!-- Sección derecha -->
+        <div class="right-section">
+            <div class="weather-details-container">
+                <h2>Detalles del Clima</h2>
+                <div class="weather-details" id="current-weather-items"></div>
+            </div>
+            <div class="future-forecast">
+                <div class="today" id="current-temp">
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="other">
+                        <div class="day">Monday</div>
+                        <div class="temp">Night - 25.6&#176; C</div>
+                        <div class="temp">Day - 35.6&#176; C</div>
+                    </div>
+                </div>
+                <div class="weather-forecast" id="weather-forecast">
+                    <!-- Aquí se agregarán los elementos del pronóstico mediante JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

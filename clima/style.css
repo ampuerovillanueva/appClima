@@ -1,0 +1,443 @@
+/* Variables de color */
+:root {
+    --purple: #9a67ea;
+    --blue-light: #04d4c3;
+}
+
+/* Fondo con gradiente lineal para toda la página */
+body {
+    background: linear-gradient(180deg, var(--purple), var(--blue-light));
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Asegurar que el contenido llene toda la página */
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(240, 240, 240, 0.8);
+    /* Fondo con opacidad */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.right-section {
+    flex: 3;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(208, 208, 208, 0.8);
+    /* Fondo con opacidad */
+    overflow-x: hidden;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.current-info {
+    font-size: 1em;
+    /* Tamaño de fuente base */
+    margin-bottom: 20px;
+    background-color: rgba(0, 123, 255, 0.8);
+    /* Azul atractivo con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidad */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: 2em;
+    /* Aumentar tamaño de la hora */
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Centrar horizontalmente */
+}
+
+.time-zone-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* Alinear a la derecha */
+}
+
+.time-zone,
+.country {
+    font-size: 1.2em;
+    /* Aumentar tamaño de la zona horaria y el país */
+    margin-bottom: 5px;
+}
+
+.department-select-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    /* Separar del contenedor de fecha */
+}
+
+.department-select-container label {
+    margin-bottom: 5px;
+}
+
+#department-select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.previous-days {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 123, 255, 0.8);
+    /* Azul atractivo con opacidad */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidad */
+    max-height: 400px;
+    /* Altura máxima del contenedor */
+    overflow-y: auto;
+    /* Agregar scroll vertical */
+}
+
+.previous-days h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.previous-day-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+}
+
+.previous-day-item img {
+    margin-right: 15px;
+    width: 50px;
+    /* Tamaño del icono */
+    height: auto;
+}
+
+.previous-day-info {
+    display: flex;
+    flex-direction: row;
+    /* Cambiar a fila */
+    align-items: center;
+    justify-content: space-between;
+    /* Separar uniformemente */
+    width: 100%;
+}
+
+.previous-day-info .temp {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 15px;
+    /* Espacio entre elementos */
+}
+
+.previous-day-info .date,
+.previous-day-info .day-name {
+    font-size: 1em;
+    margin-right: 15px;
+    /* Espacio entre elementos */
+}
+
+.previous-day-info .day-name {
+    font-size: 22px;
+}
+
+.weather-details-container {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 123, 255, 0.8);
+    /* Azul atractivo con opacidad */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidad */
+}
+
+.weather-details-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.weather-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Espacio entre los elementos */
+}
+
+.weather-item {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px 0;
+    /* Espacio reducido en la parte superior e inferior */
+    padding: 20px;
+    width: 180px;
+    /* Ancho aumentado */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.weather-item img {
+    width: 40px;
+    /* Tamaño del icono */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.weather-item .label {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.weather-item .value {
+    font-size: 1.2em;
+}
+
+.future-forecast {
+    background-color: rgba(0, 123, 255, 0.8);
+    /* Azul atractivo con opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* Permitir que los elementos se apilen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra para dar profundidad */
+    justify-content: center;
+    /* Centrar los elementos */
+}
+
+.future-forecast h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    width: 100%;
+    /* Para que el título ocupe toda la fila */
+}
+
+.today {
+    background: #0056b3;
+    /* Azul más oscuro */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding: 30px;
+    width: 350px;
+    /* Más ancho que los otros contenedores */
+    height: auto;
+    display: flex;
+    align-items: center;
+    /* Alinea elementos en el centro verticalmente */
+    vertical-align: top;
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.today .w-icon {
+    width: 120px;
+    /* Tamaño más grande de la imagen */
+    height: auto;
+    margin-right: 20px;
+    /* Espacio entre la imagen y el texto */
+}
+
+.today .other {
+    text-align: left;
+    /* Texto alineado a la izquierda */
+}
+
+.today .temp {
+    font-size: 1.3em;
+    /* Tamaño de fuente más grande para "Noche" y "Día" */
+    margin-top: 5px;
+}
+
+.weather-forecast-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fondo blanco con transparencia */
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 150px;
+    /* Ancho más corto */
+    height: auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra ligera */
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.weather-forecast-item img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+.weather-forecast-item .day,
+.today .day {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.weather-forecast-item .temp {
+    font-size: 1em;
+    /* Tamaño de fuente más pequeño para "Noche" y "Día" */
+    margin-top: 5px;
+}
+
+/* Estilos para pantallas medianas (entre 500px y 900px) */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .previous-day-item,
+    .weather-forecast-item,
+    .today {
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    .weather-item {
+        width: 45%;
+        /* Ajustar ancho */
+    }
+
+    .today .w-icon {
+        width: 80px;
+    }
+
+    .future-forecast {
+        display: flex;
+        justify-content: space-between;
+        /* Para distribuir espacio entre los cuadros */
+    }
+
+    .weather-forecast-item {
+        width: 49%;
+        /* Ajustar ancho */
+    }
+}
+
+/* Estilos para pantallas pequeñas (menos de 500px) */
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .previous-day-item,
+    .weather-forecast-item,
+    .today {
+        width: 97%;
+        margin: 5px 0;
+    }
+
+    .weather-item {
+        width: 90%;
+        /* Ajustar ancho */
+    }
+
+    .today .w-icon {
+        width: 80px;
+    }
+
+    .future-forecast {
+        flex-direction: column;
+        /* Apilar los elementos verticalmente */
+        align-items: center;
+        /* Centrar los elementos */
+    }
+
+    .weather-forecast-item {
+        width: 90%;
+        /* Ajustar ancho */
+    }
+}
