@@ -29,4 +29,4 @@ Para utilizar la App del Clima, sigue estos pasos:
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/app-del-clima.git
+   git clone https://github.com/ampuerovillanueva/appClima
